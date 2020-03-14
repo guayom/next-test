@@ -1,9 +1,9 @@
-import Link from 'next/link';
-export default function Index() {
-    return (
-      <div>
-        <h1>Page 2</h1>
-        <Link href="/">Index</Link>
-      </div>
-    );
-  }
+const Page2: React.FC = () => {
+  return (
+    <div>
+      <h1>Page 2</h1>
+    </div>
+  );
+};
+
+export default Page2;

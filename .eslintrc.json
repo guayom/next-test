@@ -1,0 +1,41 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": ["react-app", "plugin:@typescript-eslint/recommended"],
+    "rules": {
+      "@typescript-eslint/camelcase": [
+        "error",
+        {
+          "allow": [
+            "address_zip",
+            "utm_campaign",
+            "utm_source",
+            "utm_medium",
+            "utm_content",
+            "listRegisteredProducts_listRegisteredProducts_plans",
+            "listRegisteredProducts_listRegisteredProducts_sanityProduct",
+            "listRegisteredProducts_listRegisteredProducts_agreements",
+            "getAvailabilities_getAvailabilities_center",
+            "listCenters_centers",
+            "getQuote_getQuote",
+            "validateCoupon_validateCoupon",
+            "getAvailabilities_getAvailabilities"
+          ]
+        }
+      ],
+  
+      "@typescript-eslint/explicit-function-return-type": [
+        "error",
+        { "allowExpressions": true }
+      ],
+      "@typescript-eslint/explicit-member-accessibility": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-extraneous-class": "error",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-empty-interface": "off",
+      "@typescript-eslint/no-unnecessary-condition": "error",
+      "react/react-in-jsx-scope": "off"
+    }
+  }

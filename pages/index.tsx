@@ -1,21 +1,14 @@
-import Link from 'next/link';
+import React from 'react';
 import { NextPage } from 'next';
+import Link from 'next/link';
 
-const Index: NextPage<{ userAgent: string }> = ({ userAgent }) => {
+const Index: NextPage<{ userAgent: string }> = () => {
   return (
     <div>
       <h1>Index</h1>
-      <pre>{userAgent}</pre>
-      <Link href="/page-2">
-          <a title="About Page">Page 2</a>
-      </Link>
+      <Link href="/page2">Page 2</Link>
     </div>
   );
-}
-
-Index.getInitialProps = async ({ req }) => {
-  const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
-  return { userAgent };
 };
 
 export default Index;
